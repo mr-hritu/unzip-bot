@@ -102,7 +102,7 @@ This may take a while, go grab a coffee ☕️
 {}
 {}
 
-**Powered by @EDM115bots**
+**Powered by @Private_Bots**
     """
 
     PROCESSING = "**Processing…**"
@@ -159,7 +159,7 @@ Select the extraction mode for that merged file 👀
     EXT_CAPTION = """
 `{}`
 
-Successfully extracted by @unzip_edm115bot 🥰
+Successfully extracted by @unzip_all_bot 🥰
     """
 
     URL_UPLOAD = """
@@ -175,7 +175,7 @@ An error happened for `{}` 😕
 **Error type :** `{}`
 **Error message :** `{}`
 
-Please report this at @EDM115_chat if you think this is a serious error
+Please report this at @Privates_Chats if you think this is a serious error
     """
 
     REPORT_TEXT = """
@@ -208,7 +208,7 @@ have been saved from the URL
 
 **⚠ IN ALL CASES ⚠**, please send **/clean**, else you couldn’t send any other task 🙂🔫 (may be fixed in the future)
 
-Please report this at @EDM115_chat if you think this is a serious error
+Please report this at @Privates_Chats if you think this is a serious error
     """
 
     HOW_MANY_UPLOADED = "`{}` files were extracted from that archive"
@@ -251,7 +251,7 @@ Hi **{}** 👋, I'm **Unarchiver bot** 🥰
 
 I can extract archives like `zip`, `rar`, `tar`, …
 
-**Made with ❤️ by @EDM115bots**
+**Made with ❤️ by @Private_Bots**
 
 **/donate** if you can 🥺
     """
@@ -274,12 +274,12 @@ I can extract archives like `zip`, `rar`, `tar`, …
 
 
 **• Got an error ?**
-    Visit edm115.eu.org/unzip#help
+    Visit @Privates_Chats
 
 
 **• I wanna have help 🥺**
 
-    PM me at **@EDM115** or join the chat **@EDM115_chat**
+    PM me at **@Prime_Hritu** or join the chat **@Privates_Chats**
     """
 
     ABOUT_TXT = """
@@ -287,11 +287,10 @@ I can extract archives like `zip`, `rar`, `tar`, …
 
 • **Language :** [Python 3.11.3](https://www.python.org/)
 • **Framework :** [Pyrogram 2.0.106](https://pyrogram.org/)
-• **Source code :** [EDM115/unzip-bot](https://github.com/EDM115/unzip-bot/tree/beta)
-• **Developer :** [EDM115](https://github.com/EDM115)
+• **Developer :** [HRITU](https://t.me/Prime_Hritu)
 
-**[Rate me ⭐](https://t.me/BotsArchive/2705)**
-Made with ❤️ by **@EDM115bots**
+**[Rate me ⭐](https://t.me/Rate_Here/5)**
+Made with ❤️ by **@Private_Bots**
     """
 
     DONATE_TEXT = """
@@ -303,11 +302,8 @@ So if you can, donate :)
 It helps out a ton, covers the costs (hosting, updating, … 👨‍💻)
 
 --How ?--
-• **[Paypal](https://www.paypal.me/8EDM115)**
-• **[GitHub Sponsors](https://github.com/sponsors/EDM115)**
-• **[Directly in Telegram](https://t.me/EDM115bots/170)**
-• **[BuyMeACoffee](https://www.buymeacoffee.com/edm115)**
-• **[Send cryptos (not recommended)](https://edm115.shadd.eu.org/)**
+
+• [Hritu](https://t.me/prime_hritu)
 
 Thanks for your contribution 😊
     """
@@ -396,7 +392,7 @@ Do you really want to delete your thumbnail ?
 
 `{}`
 
-Please report this at @EDM115_chat if you think this is a serious error
+Please report this at @Privates_Chats if you think this is a serious error
     """
 
     CANCELLED_TXT = "**{} ✅**"
@@ -447,7 +443,7 @@ User ID : {}
     NOT_AN_ARCHIVE = """
 That's not an archive 💀
 
-**Try to @transload it**
+**Try to @unzip_all_bot it**
     """
 
     DEF_NOT_AN_ARCHIVE = """
@@ -461,7 +457,7 @@ If you believe it's an error, send the file to **@EDM115**
 
     ERR_DL = "Error on download : {}"
 
-    CANT_DL_URL = "**Sorry, I can't download that URL 😭 Try to @transload it**"
+    CANT_DL_URL = "**Sorry, I can't download that URL 😭 Try to transload it**"
 
     GIVE_ARCHIVE = "Give me an archive to extract 😐"
 
@@ -480,7 +476,7 @@ Use the **/merge** command
     QUERY_PARSE_ERR = """
 Fatal query parsing error 💀
 
-Please contact @EDM115_chat with details and screenshots
+Please contact @Privates_Chats with details and screenshots
     """
 
     GIVE_NEW_NAME = """
@@ -498,7 +494,7 @@ Please send the new file name (**--INCLUDE THE FILE EXTENTION !--**)
     UPLOADED = """
 **Successfully uploaded ✅**
 
-**Join @EDM115bots ❤️**
+**Join @Private_Bots ❤️**
     """
 
     NO_FILE_LEFT = "There's no file left to upload"
@@ -727,7 +723,7 @@ Here's all the commands that only the owner (you) can use :
 **/self** : Get full info about me (info returned by Pyrogram)
 **/redbutton** : Will fully restart bot + server
 **/cleanall** : Same as `/clean`, but for the whole server
-**/logs** : Send you the logs (all of them). Useful for bug tracking. Send them to **@EDM115** if you don't understand them/need help
+**/logs** : Send you the logs (all of them). Useful for bug tracking. Send them to **@Prime_Hritu** if you don't understand them/need help
 **/restart** : Does a basic restart, less intrusive as the `/redbutton` one
 **/dbexport** : Exports the whole database as CSV
 **/admincmd** : This message
@@ -953,7 +949,7 @@ class Buttons:
     RATE_ME = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(Messages.RATE, url="https://t.me/BotsArchive/2705"),
+                InlineKeyboardButton(Messages.RATE, url="https://t.me/Rate_Here/5"),
                 InlineKeyboardButton(Messages.DONATE, callback_data="donatecallback")
             ],
         ]
