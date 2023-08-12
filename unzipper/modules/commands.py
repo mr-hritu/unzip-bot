@@ -5,7 +5,9 @@ import shutil
 import time
 from asyncio import sleep
 from sys import executable
-
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
+from pyrogram.errors import UserBannedInChannel, UserNotParticipant
 import git
 import psutil
 from pyrogram import Client, enums, filters
@@ -40,6 +42,22 @@ from .bot_data import Buttons, Messages
 
 # Regex for urls
 https_url_regex = r"((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*"
+
+
+@Client.on_message(filters.text & filters.private & filters.incoming)
+async def fore(c, m):
+      try:
+        chat = await c.get_chat_member(-1001785446911, m.from_user.id)
+        if chat.status=="kicked":
+           await c.send_message(chat_id=m.chat.id, text="You are Banned ☹️\n\n📝 If u think this is an ERROR message in @Privates_Chats", reply_to_message_id=m.id)
+           m.stop_propagation()
+      except UserBannedInChannel:
+         return await c.send_message(chat_id=m.chat.id, text="Hai you made a mistake so you are banned from channel so you are banned from me too 😜")
+      except UserNotParticipant:
+          button = [[InlineKeyboardButton('Updates Channel 🇮🇳', url='https://t.me/Private_Bots')]]
+          markup = InlineKeyboardMarkup(button)
+          return await c.send_message(chat_id=m.chat.id, text="""**Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now 👇\n/start**""", reply_markup=markup)
+      m.continue_propagation()
 
 
 @Client.on_message(filters.private)
