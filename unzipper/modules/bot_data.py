@@ -159,7 +159,7 @@ Select the extraction mode for that merged file 👀
     EXT_CAPTION = """
 `{}`
 
-Successfully extracted by @unzip_all_bot 🥰
+Successfully extracted by @unzipAll_bot 🥰
     """
 
     URL_UPLOAD = """
